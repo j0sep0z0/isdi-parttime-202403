@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">86.95% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>69/69</span>
+                <span class='fraction'>60/69</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">97.67% </span>
+                <span class="strong">95.34% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>42/43</span>
+                <span class='fraction'>41/43</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">86.95% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>69/69</span>
+                <span class='fraction'>60/69</span>
             </div>
         
             
@@ -383,15 +383,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -648,16 +648,16 @@ describe('make appointment', () =&gt; {
                                     provider: user.id
                                 })
                                     .then((service) =&gt; makeAppointment(user.id, customer.id, service.id, '2024-10-23', '20:00', 'confirmed'))
-                                    .then(appointment =&gt; {
-                                        expect(appointment).to.be.an('object')
-                                        expect(appointment._id).to.be.an.instanceOf(ObjectId)
-                                        expect(appointment.id).to.be.an.instanceOf(ObjectId)
-                                        expect(appointment.provider).to.equal(user.id)
-                                        expect(appointment.customer).to.equal(customer.id)
-                                        expect(appointment.service).to.equal(service.id)
-                                        expect(appointment.date).to.equal('2024-10-23')
-                                        expect(appointment.time).to.equal('20:00')
-                                        expect(appointment.status).to.equal('confirmed')
+                                    .then(<span class="fstat-no" title="function not covered" >appointment =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >                                        expect(appointment).to.be.an('object')</span>
+<span class="cstat-no" title="statement not covered" >                                        expect(appointment._id).to.be.an.instanceOf(ObjectId)</span>
+<span class="cstat-no" title="statement not covered" >                                        expect(appointment.id).to.be.an.instanceOf(ObjectId)</span>
+<span class="cstat-no" title="statement not covered" >                                        expect(appointment.provider).to.equal(user.id)</span>
+<span class="cstat-no" title="statement not covered" >                                        expect(appointment.customer).to.equal(customer.id)</span>
+<span class="cstat-no" title="statement not covered" >                                        expect(appointment.service).to.equal(service.id)</span>
+<span class="cstat-no" title="statement not covered" >                                        expect(appointment.date).to.equal('2024-10-23')</span>
+<span class="cstat-no" title="statement not covered" >                                        expect(appointment.time).to.equal('20:00')</span>
+<span class="cstat-no" title="statement not covered" >                                        expect(appointment.status).to.equal('confirmed')</span>
                                     })
                             })
                     })
@@ -868,7 +868,7 @@ describe('make appointment', () =&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-09-03T09:17:24.781Z
+                at 2024-09-18T17:01:43.074Z
             </div>
         <script src="../prettify.js"></script>
         <script>

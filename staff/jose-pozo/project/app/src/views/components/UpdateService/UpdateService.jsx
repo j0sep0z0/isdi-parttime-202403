@@ -28,8 +28,8 @@ function UpdateService({ selectedService, onSaveEditedService, onCloseEditedServ
         const category = form.category.value
         const duration = form.duration.value
         const price = form.price.value
-
         const serviceUpdated = { name, description, category, duration, price }
+
 
         try {
             logic.updateService(selectedService.id, serviceUpdated)

@@ -1,11 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useState } from 'react'
 import { AppWrapper } from './contexts/AppWrapper'
-import { Context } from './contexts/UseContext.jsx'
-import { UserProfileProvider } from './contexts/UserProfileProvider'
-import { AppointmentsProvider } from './contexts/AppointmentsProvider'
-
-
 
 import Alert from './views/components/Alert/Alert'
 

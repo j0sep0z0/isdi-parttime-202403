@@ -29,7 +29,7 @@ Provider
 
 ### UI Design
 
-[Figma](https://www.figma.com/design/FtmTtX9cZewWlv6yqsj4nu/demo-app?node-id=0-1&t=tNho9NZQl4l4RETJ-0)
+![Figma](../app/public/figma.png)
 
 ## Technical
 
@@ -78,4 +78,4 @@ Note
 
 ## Test-Coverage
 
-![](../app/public/Captura%20de%20pantalla%202024-09-03.png)
+![test-coverage](../app/public/Captura%20de%20pantalla.png)

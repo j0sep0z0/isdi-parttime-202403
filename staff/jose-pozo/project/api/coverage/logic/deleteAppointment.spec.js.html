@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">95.38% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>65/65</span>
+                <span class='fraction'>62/65</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">84.37% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>32/32</span>
+                <span class='fraction'>27/32</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">95.38% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>65/65</span>
+                <span class='fraction'>62/65</span>
             </div>
         
             
@@ -343,9 +343,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -555,12 +555,12 @@ describe('delete appointment', () =&gt; {
                                             status: 'confirmed'
                                         })
                                     })
-                                    .then((appointment) =&gt; deleteAppointment(user.id, appointment.id))
-                                    .then(() =&gt; Appointment.findOne())
-                                    .then(appointment =&gt; {
-                                        expect(appointment).to.be.exist
-                                        expect(appointment.status).to.equal('deleted')
-                                        expect(appointment.active).to.be.false
+                                    .then(<span class="fstat-no" title="function not covered" >(appointment) =&gt; d</span>eleteAppointment(user.id, appointment.id))
+                                    .then(<span class="fstat-no" title="function not covered" >() =&gt; A</span>ppointment.findOne())
+                                    .then(<span class="fstat-no" title="function not covered" >appointment =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >                                        expect(appointment).to.be.exist</span>
+<span class="cstat-no" title="statement not covered" >                                        expect(appointment.status).to.equal('deleted')</span>
+<span class="cstat-no" title="statement not covered" >                                        expect(appointment.active).to.be.false</span>
                                     })
                             })
                     })
@@ -612,7 +612,7 @@ describe('delete appointment', () =&gt; {
                                             status: 'confirmed'
                                         })
                                     })
-                                    .then((appointment) =&gt; deleteAppointment(new ObjectId().toString(), appointment.id))
+                                    .then(<span class="fstat-no" title="function not covered" >(appointment) =&gt; d</span>eleteAppointment(new ObjectId().toString(), appointment.id))
                                     .catch(error =&gt; {
                                         errorThrown = error
                                     })
@@ -670,7 +670,7 @@ describe('delete appointment', () =&gt; {
                                             status: 'confirmed'
                                         })
                                     })
-                                    .then((appointment) =&gt; deleteAppointment(user.id, new ObjectId().toString()))
+                                    .then(<span class="fstat-no" title="function not covered" >(appointment) =&gt; d</span>eleteAppointment(user.id, new ObjectId().toString()))
                                     .catch(error =&gt; errorThrown = error)
                                     .finally(() =&gt; {
                                         expect(errorThrown).to.be.an.instanceOf(NotFoundError)
@@ -715,7 +715,7 @@ describe('delete appointment', () =&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-09-03T09:17:24.781Z
+                at 2024-09-18T17:01:43.074Z
             </div>
         <script src="../prettify.js"></script>
         <script>
